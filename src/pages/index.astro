@@ -1,28 +1,26 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import AstroCard from '../components/AstroCard.astro';
-import VueCard from '../components/VueCard.vue';
+import Layout from '../layouts/Layout.astro'
+import AstroCard from '../components/AstroCard.astro'
+import VueCard from '../components/VueCard.vue'
 ---
 
 <Layout title="Welcome to Astro.">
 	<main>
-		<h1 class="text-center text-5xl sm:text-7xl font-bold flex flex-col justify-center items-center h-52 sm:h-80 pb-5">
-			<div class="text-">
-				Welcome to 
-			</div>
-			<div 
-				class="bg-gradient-to-r text-transparent bg-clip-text from-purple-500 to-purple-300"
-			>
+		<h1
+			class="flex h-52 flex-col items-center justify-center pb-5 text-center text-5xl font-bold sm:h-80 sm:text-7xl"
+		>
+			<div class="text-">Welcome to</div>
+			<div class="bg-gradient-to-r from-purple-500 to-purple-300 bg-clip-text text-transparent">
 				Astro
 			</div>
 		</h1>
-		<div class="grid sm:grid-cols-2 max-w-2xl w-full mx-auto gap-4 sm:gap-8">
+		<div class="mx-auto grid w-full max-w-2xl gap-4 sm:grid-cols-2 sm:gap-8">
 			<AstroCard
 				href="https://docs.astro.build/"
 				title="Astro Documentation"
 				body="This card component by 'astro'"
 			/>
-   <VueCard 
+			<VueCard
 				href="https://vuejs.org/"
 				title="Vue.js  Documentation"
 				body="This card component by 'Vue JS'"
