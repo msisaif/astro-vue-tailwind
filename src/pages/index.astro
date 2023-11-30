@@ -20,11 +20,7 @@ import VueCard from '../components/VueCard.vue'
 				title="Astro Documentation"
 				body="This card component by 'astro'"
 			/>
-			<VueCard
-				href="https://vuejs.org/"
-				title="Vue.js  Documentation"
-				body="This card component by 'Vue JS'"
-			/>
+			<VueCard client:load />
 		</div>
 	</main>
 </Layout>
