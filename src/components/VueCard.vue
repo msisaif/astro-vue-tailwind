@@ -24,10 +24,20 @@ function decrement() {
 		<a
 			href="https://vuejs.org/"
 			target="_blank"
-			class="flex items-center justify-between rounded-md bg-green-600 px-3 py-2"
+			class="flex items-center justify-between rounded-md border border-[#42b883] px-3 py-2 text-[#42b883] transition-all hover:scale-105"
 		>
-			<div>This component by <b>Vue.js</b></div>
-			<span>&rarr;</span>
+			<div>Counter</div>
+			<div class="flex items-center justify-center gap-1">
+				<svg class="h-6 w-auto shrink-0 grow-0" viewBox="0 0 128 128">
+					<path
+						fill="#42b883"
+						d="M78.8,10L64,35.4L49.2,10H0l64,110l64-110C128,10,78.8,10,78.8,10z"
+					></path>
+					<path fill="#35495e" d="M78.8,10L64,35.4L49.2,10H25.6L64,76l38.4-66H78.8z"></path>
+				</svg>
+				<b>Vue.js</b>
+			</div>
+			<span class="select-none">&rarr;</span>
 		</a>
 		<div class="mt-3 flex items-center justify-center gap-4">
 			<svg
@@ -45,7 +55,7 @@ function decrement() {
 					d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
 				/>
 			</svg>
-			<div class="text-4xl font-bold">
+			<div class="select-none text-4xl font-bold">
 				{{ counter }}
 			</div>
 			<svg

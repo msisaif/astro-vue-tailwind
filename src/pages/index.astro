@@ -20,7 +20,8 @@ import VueCard from '../components/VueCard.vue'
 				title="Astro Documentation"
 				body="Learn how Astro works and explore the official API docs. (This component by 'astro.build')"
 			/>
-			<VueCard client:load />
+			<VueCard initialValue={0} client:load />
+			<VueCard initialValue={0} client:visible />
 		</div>
 	</main>
 </Layout>
