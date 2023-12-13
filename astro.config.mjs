@@ -6,6 +6,4 @@ import vue from "@astrojs/vue";
 // https://astro.build/config
 export default defineConfig({
   integrations: [tailwind(), vue()],
-  site: 'https://msisaif.github.io',
-  base: '/astro-vue-tailwind',
 });
